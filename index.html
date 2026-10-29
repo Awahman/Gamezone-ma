@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>GameZone MA | ألعاب رقمية</title>
+<meta name="description" content="GameZone MA - متجر ألعاب رقمية. تصفح المنتجات واطلب بسهولة عبر WhatsApp.">
+<style>
+:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243b;--line:#203a58;--blue:#1687ff;--blue2:#45a2ff;--text:#f1f6ff;--muted:#a8bbd2;--green:#24c875;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#102744 0,#07111f 48%,#050b14 100%);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}
+.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#07111feF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:900;white-space:nowrap}.logo{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,#1687ff,#0952b5);font-size:23px;box-shadow:0 8px 25px #1687ff33}.brand span{color:var(--blue2)}
+.navlinks{display:flex;gap:18px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:#fff}
+.nav-actions{display:flex;gap:8px;align-items:center}.pill{border:1px solid var(--line);border-radius:12px;padding:9px 12px;background:#0d1b2e;color:var(--text)}
+.hero{padding:48px 0 28px}.hero-box{position:relative;overflow:hidden;border:1px solid #24517c;border-radius:26px;padding:clamp(25px,5vw,58px);background:linear-gradient(115deg,#0b1b30 0%,#0b2a4b 52%,#0758a8 130%);min-height:280px;display:flex;align-items:center}
+.hero-box:after{content:"🎮";position:absolute;left:5%;top:8%;font-size:clamp(100px,18vw,220px);opacity:.12;transform:rotate(-13deg);pointer-events:none}
+.hero-copy{max-width:650px;position:relative;z-index:1}.eyebrow{display:inline-block;color:#8cc7ff;background:#1687ff20;border:1px solid #1687ff55;padding:5px 11px;border-radius:999px;font-size:.82rem}.hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.2;margin:16px 0}.hero p{color:#c0d3e9;max-width:570px;margin:0 0 22px}
+.btn{border:0;border-radius:12px;background:var(--blue);color:#fff;padding:11px 17px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.btn:hover{background:#3699ff;transform:translateY(-1px)}.btn.secondary{background:#132b46;border:1px solid #315575}.btn.whatsapp{background:#128c53}.btn.small{padding:8px 11px;font-size:.9rem}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 34px}.feature{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid var(--line);border-radius:15px;background:#0b1929}.feature .ico{font-size:23px}.feature b{display:block;font-size:.94rem}.feature small{color:var(--muted)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:30px 0 16px}.section-head h2{margin:0;font-size:1.6rem}.section-head p{margin:3px 0 0;color:var(--muted);font-size:.92rem}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.search{flex:1;min-width:190px}.search input,.filters select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:#0b1929;color:var(--text);outline:none}.search input:focus,.filters select:focus{border-color:var(--blue)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--line);border-radius:999px;background:#0b1929;color:var(--muted);padding:9px 14px}.chip.active,.chip:hover{background:#0c4f91;color:#fff;border-color:#1687ff}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:linear-gradient(180deg,#0e2035,#091522);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:#327dc0}
+.cover{height:158px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:1.5rem;font-weight:900;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--c1),var(--c2))}.cover:before,.detail-cover:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff25;border-radius:50%;left:-35px;top:-75px;box-shadow:0 0 0 22px #ffffff08,0 0 0 45px #ffffff06}.cover .cover-title{position:relative;text-shadow:0 3px 12px #0008}.tag{position:absolute;top:10px;right:10px;background:#06111dcc;border:1px solid #ffffff30;padding:3px 8px;border-radius:8px;font-size:.72rem;font-weight:700}
+.card-body{padding:14px}.meta{color:var(--muted);font-size:.8rem}.card h3{font-size:1.04rem;margin:5px 0 4px}.desc{color:#b5c6da;font-size:.86rem;min-height:42px;margin:0 0 12px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}.price{font-weight:900;font-size:1.15rem;color:#fff}.price small{font-size:.75rem;color:var(--muted);font-weight:500}.card-actions{display:flex;gap:8px}.card-actions button{flex:1}
+.empty{padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:15px;grid-column:1/-1}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 42px}.how-card{padding:20px;border:1px solid var(--line);border-radius:16px;background:#0b1929}.num{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:#0e4f91;color:#fff;font-weight:900}.how-card h3{margin:12px 0 4px}.how-card p{margin:0;color:var(--muted);font-size:.9rem}
+.notice{padding:16px 18px;border:1px solid #66532b;background:#251e10;color:#f7dfaa;border-radius:14px;margin:24px 0;font-size:.9rem}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0;color:var(--muted);font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:900}
+.modal{position:fixed;inset:0;z-index:30;background:#02060bd9;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-box{width:min(650px,100%);max-height:90vh;overflow:auto;border:1px solid #315575;border-radius:20px;background:#0a1727;box-shadow:0 25px 100px #000a}.modal-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}.close{border:1px solid var(--line);background:#10243b;color:white;border-radius:9px;width:36px;height:36px}.modal-content{padding:20px}.detail-cover{position:relative;overflow:hidden;min-height:180px;display:grid;place-items:center;text-align:center;font-size:2rem;font-weight:900;border-radius:14px;padding:20px;background:linear-gradient(135deg,var(--c1),var(--c2))}.modal-content p{color:var(--muted)}.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.modal-actions .btn{flex:1}
+#toTop{position:fixed;bottom:18px;left:18px;display:none;z-index:9;border-radius:50%;width:45px;height:45px;padding:0}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.navlinks{gap:10px}.brand{font-size:1.05rem}}
+@media(max-width:650px){.wrap{width:min(100% - 22px,1180px)}.nav{flex-wrap:wrap;padding:10px 0}.navlinks{order:3;width:100%;overflow:auto;padding:3px 0 5px}.navlinks a{white-space:nowrap}.nav-actions .pill{padding:7px 9px;font-size:.82rem}.hero{padding-top:20px}.hero-box{min-height:300px;padding:24px}.hero-box:after{left:-5%;top:30%;font-size:130px}.features{grid-template-columns:1fr;gap:8px}.feature{padding:12px}.section-head{align-items:start;flex-direction:column}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cover{height:130px;font-size:1.2rem}.card-body{padding:11px}.card h3{font-size:.95rem}.desc{font-size:.8rem;min-height:55px}.card-actions{flex-direction:column}.card-actions .btn{width:100%}.how{grid-template-columns:1fr}.hero h1{font-size:2.1rem}}
+@media(max-width:360px){.grid{grid-template-columns:1fr}.cover{height:165px}.card-actions{flex-direction:row}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#" aria-label="GameZone MA الرئيسية"><span class="logo">🎮</span><span>GameZone <span>MA</span></span></a>
+  <nav class="navlinks" aria-label="القائمة"><a href="#home">الرئيسية</a><a href="#products">الألعاب</a><a href="#how">كيفاش تشري؟</a><a href="#contact">تواصل معنا</a></nav>
+  <div class="nav-actions"><a class="pill" href="#products">تصفح الألعاب ↙</a></div>
+ </div>
+</header>
+<main class="wrap">
+ <section class="hero" id="home">
+  <div class="hero-box"><div class="hero-copy">
+   <span class="eyebrow">🎮 عالم الألعاب الرقمية</span>
+   <h1>اللعبة اللي كتقلب عليها، <span style="color:#57adff">قريبة ليك.</span></h1>
+   <p>مرحبا بك فـ GameZone MA. تصفح المنتجات، شوف التفاصيل، وطلب بسهولة عبر WhatsApp. خدمة بسيطة وواضحة للاعبين فالمغرب.</p>
+   <a class="btn" href="#products">شوف الألعاب <span>←</span></a>
+   <a class="btn secondary" href="#how" style="margin-right:7px">كيفاش كنخدمو؟</a>
+  </div></div>
+  <div class="features">
+   <div class="feature"><span class="ico">📩</span><div><b>طلب سهل</b><small>تواصل مباشر عبر WhatsApp</small></div></div>
+   <div class="feature"><span class="ico">🛡️</span><div><b>وضوح قبل الشراء</b><small>أكد الثمن والمنصة قبل الأداء</small></div></div>
+   <div class="feature"><span class="ico">💻</span><div><b>متجر متجاوب</b><small>خدام فالتليفون والكمبيوتر</small></div></div>
+  </div>
+ </section>
+ <section id="products">
+  <div class="section-head"><div><h2>تصفح المنتجات</h2><p>اختار اللعبة وشوف التفاصيل قبل ما تطلب.</p></div><span class="meta" id="count"></span></div>
+  <div class="filters">
+   <label class="search"><input id="search" type="search" placeholder="🔎 قلب على لعبة أو منتج..." aria-label="البحث عن منتج"></label>
+   <select id="platform" aria-label="تصفية حسب المنصة"><option value="">جميع المنصات</option><option>PC</option><option>PlayStation</option><option>Xbox</option><option>Nintendo</option><option>متعدد المنصات</option></select>
+  </div>
+  <div class="chips" id="chips">
+   <button class="chip active" data-cat="الكل">الكل</button><button class="chip" data-cat="ألعاب PC">ألعاب PC</button><button class="chip" data-cat="Gift Cards">Gift Cards</button><button class="chip" data-cat="DLC">DLC</button><button class="chip" data-cat="اشتراكات">اشتراكات</button>
+  </div>
+  <div class="grid" id="grid" style="margin-top:16px"></div>
+  <div class="notice">⚠️ هاد المنتجات والأثمنة غير أمثلة باش تجرّب التصميم. بدّلها بمنتجات حقيقية عندك الحق فبيعها، وتأكد من المنطقة، المنصة، شروط الاستعمال، والتوفر قبل استقبال أي طلب أو أداء.</div>
+ </section>
+ <section id="how">
+  <div class="section-head"><div><h2>كيفاش كتطلب؟</h2><p>خطوات بسيطة بلا تسجيل حساب.</p></div></div>
+  <div class="how">
+   <article class="how-card"><span class="num">1</span><h3>اختار المنتج</h3><p>قرا الوصف وتأكد من المنصة والمنطقة والثمن النهائي.</p></article>
+   <article class="how-card"><span class="num">2</span><h3>صيفط الطلب</h3><p>ضغط على زر الطلب وغادي يتحل WhatsApp برسالة جاهزة.</p></article>
+   <article class="how-card"><span class="num">3</span><h3>أكد قبل الأداء</h3><p>تأكد من التوفر وطريقة التسليم وسياسة الاسترجاع قبل ما تخلص.</p></article>
+  </div>
+ </section>
+ <section id="contact">
+  <div class="section-head"><div><h2>عندك شي سؤال؟</h2><p>تواصل معنا عبر WhatsApp للاستفسار على المنتجات والطلبات.</p></div></div>
+  <a class="btn whatsapp" id="contactBtn" href="#" target="_blank" rel="noopener">☏ تواصل عبر WhatsApp</a>
+ </section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">🎮 GameZone MA</div><div>ستور ألعاب رقمية — المغرب</div></div><div>© <span id="year"></span> GameZone MA · جميع الحقوق محفوظة</div></div></footer>
+<button class="btn" id="toTop" aria-label="العودة للأعلى" title="العودة للأعلى">↑</button>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-box"><div class="modal-top"><strong id="modalTitle">تفاصيل المنتج</strong><button class="close" id="closeModal" aria-label="إغلاق">✕</button></div><div class="modal-content" id="modalContent"></div></div>
+</div>
+<script>
+/* مهم: بدّل الرقم التالي برقم WhatsApp ديالك بصيغة دولية، أرقام فقط بلا + ولا مسافات.
+   مثال للمغرب: 2126XXXXXXXX (بدّل X بالرقم الصحيح ديالك). */
+const CONFIG = { whatsappNumber: "212600000000", currency: "DH" };
+const products = [
+ {id:"pc-adventure",name:"Adventure PC Bundle",platform:"PC",category:"ألعاب PC",price:149,tag:"PC",colors:["#125b9c","#101a38"],description:"مثال لباقة ألعاب مغامرات للحاسوب. أكد أسماء الألعاب والتراخيص والتوفر قبل البيع."},
+ {id:"gift-card",name:"Gift Card رقمية",platform:"متعدد المنصات",category:"Gift Cards",price:100,tag:"DIGITAL",colors:["#4b27a8","#092d66"],description:"بطاقة هدايا رقمية. خاص تحدد المتجر والمنطقة والقيمة الحقيقية قبل تأكيد الطلب."},
+ {id:"game-pass",name:"Gaming Subscription",platform:"Xbox",category:"اشتراكات",price:199,tag:"SUBSCRIPTION",colors:["#176d43","#0b2431"],description:"مثال اشتراك ألعاب. أكد المدة والمنطقة وشروط الحساب والتسليم قبل البيع."},
+ {id:"dlc-pack",name:"Expansion DLC Pack",platform:"PC",category:"DLC",price:79,tag:"ADD-ON",colors:["#923a36","#29152e"],description:"محتوى إضافي للعبة. خاص يكون متوافق مع اللعبة الأساسية والمنطقة والمنصة."},
+ {id:"indie-pack",name:"Indie Games Pack",platform:"PC",category:"ألعاب PC",price:59,tag:"INDIE",colors:["#a04c18","#30132d"],description:"مثال لباقة ألعاب مستقلة. استعمل مفاتيح أصلية ومسموح بإعادة بيعها."},
+ {id:"ps-wallet",name:"PlayStation Wallet Card",platform:"PlayStation",category:"Gift Cards",price:150,tag:"PS",colors:["#1749a5","#111c36"],description:"بطاقة رصيد PlayStation. حدد بلد الحساب وقيمة البطاقة بدقة قبل البيع."},
+ {id:"xbox-wallet",name:"Xbox Digital Card",platform:"Xbox",category:"Gift Cards",price:120,tag:"XBOX",colors:["#277c43","#10252b"],description:"بطاقة رقمية لمنصة Xbox. تحقق من المنطقة والتوافق قبل تأكيد الطلب."},
+ {id:"game-expansion",name:"Game Expansion",platform:"متعدد المنصات",category:"DLC",price:89,tag:"DLC",colors:["#9c6b1e","#351a35"],description:"مثال محتوى إضافي. وضّح اسم اللعبة الأساسية والمنصة والمنطقة والتوافق."}
+];
+let activeCategory="الكل";
+const grid=document.getElementById("grid"), search=document.getElementById("search"), platform=document.getElementById("platform");
+const money=n=>`${n} ${CONFIG.currency}`;
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function card(p){return `<article class="card"><div class="cover" style="--c1:${p.colors[0]};--c2:${p.colors[1]}"><span class="tag">${escapeHtml(p.tag)}</span><span class="cover-title">${escapeHtml(p.name)}</span></div><div class="card-body"><div class="meta">${escapeHtml(p.platform)} · ${escapeHtml(p.category)}</div><h3>${escapeHtml(p.name)}</h3><p class="desc">${escapeHtml(p.description)}</p><div class="price-row"><span class="price">${money(p.price)} <small>تقريباً</small></span></div><div class="card-actions"><button class="btn small" onclick="showProduct('${p.id}')">التفاصيل</button><button class="btn whatsapp small" onclick="orderProduct('${p.id}')">طلب عبر WhatsApp</button></div></div></article>`}
+function render(){const q=search.value.trim().toLowerCase();const plat=platform.value;const list=products.filter(p=>(activeCategory==="الكل"||p.category===activeCategory)&&(!plat||p.platform===plat||p.platform==="متعدد المنصات")&&(!q||(p.name+" "+p.description+" "+p.category+" "+p.platform).toLowerCase().includes(q)));grid.innerHTML=list.length?list.map(card).join(""):`<div class="empty">ما لقينا حتى منتج بهاد البحث. جرّب كلمة أخرى.</div>`;document.getElementById("count").textContent=`${list.length} منتجات`;}
+function getProduct(id){return products.find(p=>p.id===id)}
+function showProduct(id){const p=getProduct(id);if(!p)return;document.getElementById("modalTitle").textContent=p.name;document.getElementById("modalContent").innerHTML=`<div class="detail-cover" style="--c1:${p.colors[0]};--c2:${p.colors[1]}">${escapeHtml(p.name)}</div><p><b>المنصة:</b> ${escapeHtml(p.platform)}</p><p><b>الفئة:</b> ${escapeHtml(p.category)}</p><p><b>الثمن المعروض:</b> ${money(p.price)} (مثال قابل للتعديل)</p><p>${escapeHtml(p.description)}</p><p class="meta">قبل الأداء، تأكد من التوفر والتوافق والمنطقة وطريقة التسليم.</p><div class="modal-actions"><button class="btn whatsapp" onclick="orderProduct('${p.id}')">طلب هاد المنتج عبر WhatsApp</button><button class="btn secondary" onclick="closeModal()">رجوع للمنتجات</button></div>`;document.getElementById("modal").classList.add("open");history.replaceState(null,"",`#product-${p.id}`)}
+function closeModal(){document.getElementById("modal").classList.remove("open");history.replaceState(null,"",location.pathname+location.search)}
+function orderProduct(id){const p=getProduct(id);if(!p)return;const number=CONFIG.whatsappNumber;if(!/^\d{8,15}$/.test(number)||number==="212600000000"){alert("خاصك تبدّل رقم WhatsApp الافتراضي فملف index.html برقمك الدولي قبل استقبال الطلبات.");return;}const message=`السلام عليكم، بغيت نستفسر/نطلب هاد المنتج من GameZone MA:\nالمنتج: ${p.name}\nالمنصة: ${p.platform}\nالثمن المعروض: ${money(p.price)}\nعافاك أكد ليا التوفر والمنطقة والتوافق وطريقة الأداء والتسليم.`;window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`,"_blank","noopener,noreferrer")}
+document.getElementById("chips").addEventListener("click",e=>{const b=e.target.closest("button[data-cat]");if(!b)return;activeCategory=b.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));render()});
+search.addEventListener("input",render);platform.addEventListener("change",render);
+document.getElementById("closeModal").addEventListener("click",closeModal);document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("contactBtn").addEventListener("click",e=>{e.preventDefault();if(CONFIG.whatsappNumber==="212600000000"){alert("بدّل رقم WhatsApp الافتراضي فملف index.html برقمك الدولي.");return;}window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent("السلام عليكم، عندي سؤال على GameZone MA.")}`,"_blank","noopener,noreferrer")});
+const toTop=document.getElementById("toTop");window.addEventListener("scroll",()=>toTop.style.display=window.scrollY>450?"block":"none");toTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+render();
+if(location.hash.startsWith("#product-")){const id=location.hash.slice(9);if(getProduct(id))showProduct(id)}
+</script>
+</body>
+</html>
